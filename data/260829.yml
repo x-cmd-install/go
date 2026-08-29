@@ -1,0 +1,67 @@
+about:
+  description: The Go programming language
+  license: BSD-3-Clause
+  homepage: https://go.dev
+  head: 603439a
+  archived: false
+  latestVersion: 
+  collectedAt: 2026-08-29T07:28:22Z
+timeline:
+  created: 2014-08-19
+  lastCommit: 2026-08-29
+  lastRelease: ?
+popularity:
+  star: 136562
+  watcher: 3356
+  fork: 19311
+  release: 0
+  contributor: 2428
+  pullRequest: 5316
+  issue: 73124
+language:
+  Go: 56219161
+  Assembly: 3166607
+  HTML: 2633010
+  C: 97060
+  Shell: 67967
+  Perl: 31837
+  Python: 21296
+  JavaScript: 20759
+  Batchfile: 6101
+  Dockerfile: 3563
+  Makefile: 1854
+  Awk: 450
+totalLine: 62269665
+recent:
+  last30d:
+    since: 2026-07-30
+    release: 0
+    mergedPR: 0
+    openPR: 31
+    closedIssue: 253
+    openIssue: 250
+    commit: 212
+  last90d:
+    since: 2026-05-31
+    release: 0
+    mergedPR: 0
+    openPR: 96
+    closedIssue: 755
+    openIssue: 493
+    commit: 698
+  last180d:
+    since: 2026-03-02
+    release: 0
+    mergedPR: 0
+    openPR: 176
+    closedIssue: 1883
+    openIssue: 891
+    commit: 1583
+  last360d:
+    since: 2025-09-03
+    release: 0
+    mergedPR: 0
+    openPR: 243
+    closedIssue: 3587
+    openIssue: 1503
+    commit: 3100
