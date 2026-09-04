@@ -7,13 +7,13 @@ about:
   head: 8b1c22e
   archived: false
   latestVersion: 
-  collectedAt: 2026-09-04T20:07:31Z
+  collectedAt: 2026-09-04T20:32:44Z
 timeline:
   created: 2014-08-19
   lastCommit: 2026-09-04
   lastRelease: 
 popularity:
-  star: 137507
+  star: 137505
   watcher: 3355
   fork: 19339
   release: 0
@@ -92,7 +92,7 @@ total:
   commit: 67513
 ---
 path: /home/runner/.x-repo/github.com/golang/go
-collectedAt: 2026-09-04T20:08:00Z
+collectedAt: 2026-09-04T20:33:10Z
 loc:
   Go:
     code: 2559374
