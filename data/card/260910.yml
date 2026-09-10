@@ -7,7 +7,7 @@ about:
   latestVersion: ""
   latestRelease: ""
   latestPrerelease: ""
-  collectedAt: 2026-09-10T21:28:38Z
+  collectedAt: 2026-09-10T22:33:23Z
 timeline:
   created: 2014-08-19
   lastCommit: 2026-09-10
@@ -15,13 +15,13 @@ timeline:
   lastRelease: 
   lastPrerelease: 
 popularity:
-  star: 138142
+  star: 138347
   watcher: 3347
-  fork: 19351
+  fork: 19352
   release: 0
   contributor: 2393
   pullRequest: 5337
-  issue: 73345
+  issue: 73346
 language:
   Go: 56450018
   Assembly: 3166601
@@ -43,7 +43,7 @@ recent:
     mergedPR: 0
     openPR: 40
     closedIssue: 271
-    openIssue: 288
+    openIssue: 289
     commit: 239
   last60d:
     since: 2026-07-12
@@ -51,7 +51,7 @@ recent:
     mergedPR: 0
     openPR: 70
     closedIssue: 521
-    openIssue: 433
+    openIssue: 434
     commit: 480
   last90d:
     since: 2026-06-12
@@ -59,7 +59,7 @@ recent:
     mergedPR: 0
     openPR: 102
     closedIssue: 752
-    openIssue: 520
+    openIssue: 521
     commit: 681
   last180d:
     since: 2026-03-14
@@ -67,7 +67,7 @@ recent:
     mergedPR: 0
     openPR: 183
     closedIssue: 1841
-    openIssue: 928
+    openIssue: 929
     commit: 1587
   last360d:
     since: 2025-09-15
@@ -75,7 +75,7 @@ recent:
     mergedPR: 0
     openPR: 257
     closedIssue: 3559
-    openIssue: 1546
+    openIssue: 1547
     commit: 3047
   last720d:
     since: 2024-09-20
@@ -83,18 +83,18 @@ recent:
     mergedPR: 0
     openPR: 322
     closedIssue: 7304
-    openIssue: 2587
+    openIssue: 2588
     commit: 6555
 total:
   release: 0
   mergedPR: 1
   openPR: 536
   closedIssue: 63717
-  openIssue: 9628
+  openIssue: 9629
   commit: 67558
 ---
 path: /home/runner/.x-repo/github.com/golang/go
-collectedAt: 2026-09-10T21:29:36Z
+collectedAt: 2026-09-10T22:34:29Z
 loc:
   Go:
     code: 2562133
