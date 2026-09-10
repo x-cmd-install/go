@@ -4,7 +4,7 @@
 
 The Go programming language
 
-![go](https://repo.x-cmd.io/go.svg)
+![go](https://repo.x-cmd.io/go.svg?lang=zh)
 
 ## 安装
 
@@ -12,35 +12,13 @@ The Go programming language
 x install go
 ```
 
-## 源代码
-
-- **上游仓库**: <https://github.com/golang/go>
-- **官网**: <https://go.dev>
-- **许可证**: BSD-3-Clause
-
-## 流行度
-
-- **Star**: 137,994 · **Fork**: 19,347 · **开放 issue**: 73,325 · **贡献者**: 2,393
-
-## 累计统计
-
-- **发布数**: 0 · **已合并 PR**: 1 · **开放 PR**: 535 · **已关闭 issue**: 63705 · **开放 issue**: 9620 · **提交数**: 67554
-
-## 最近活动
-
-| 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
-|---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 0 | 0 | 39 | 265 | 274 | 236 |
-| 90d | 2026-06-12 | 0 | 0 | 101 | 745 | 507 | 678 |
-| 360d | 2025-09-15 | 0 | 0 | 256 | 3552 | 1533 | 3044 |
-
 ## 代码规模
 
-合计: **2,761,876** 行代码（覆盖前 5 种语言、共 **12462** 个文件）。
+合计: **2,762,126** 行代码（覆盖前 5 种语言、共 **12463** 个文件）。
 
 | 语言 | 代码 | 注释 | 空行 | 文件数 |
 |------|-----:|-----:|-----:|------:|
-| Go | 2,561,883 | 452,708 | 268,344 | 11693 |
+| Go | 2,562,133 | 452,790 | 268,376 | 11694 |
 | AssemblyGAS | 153,641 | 19,607 | 16,159 | 657 |
 | Json | 14,163 | 0 | 124 | 38 |
 | Html | 12,465 | 37 | 347 | 15 |
@@ -56,6 +34,50 @@ x install go
 - **Token-Permissions** (-1/10) — No tokens found
 - **Packaging** (-1/10) — packaging workflow not detected
 
+## 源代码
+
+- **上游仓库**: <https://github.com/golang/go>
+- **官网**: <https://go.dev>
+- **许可证**: BSD-3-Clause
+
+## 流行度
+
+- **Star**: 138,142 · **Fork**: 19,351 · **开放 issue**: 73,345 · **贡献者**: 2,393
+
+## 累计统计
+
+- **发布数**: 0 · **已合并 PR**: 1 · **开放 PR**: 536 · **已关闭 issue**: 63717 · **开放 issue**: 9628 · **提交数**: 67558
+
+## 最近活动
+
+| 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 30d | 2026-08-11 | 0 | 0 | 40 | 271 | 288 | 239 |
+| last60d | 2026-07-12 | 0 | 0 | 70 | 521 | 433 | 480 |
+| 90d | 2026-06-12 | 0 | 0 | 102 | 752 | 520 | 681 |
+| last180d | 2026-03-14 | 0 | 0 | 183 | 1841 | 928 | 1587 |
+| 360d | 2025-09-15 | 0 | 0 | 257 | 3559 | 1546 | 3047 |
+| last720d | 2024-09-20 | 0 | 0 | 322 | 7304 | 2587 | 6555 |
+
+## 发行版状态
+
+在 [repology.org](https://repology.org/project/go) 上共有 **1225** 个发行版报告此项目。**43** 个 ✅ 已是最新上游版本，**168** 个 ⚠️ 使用旧版本。
+
+| 发行版 | 版本 | 状态 |
+|--------|------|------|
+| Debian unstable | `1.25.12` | 🪦 legacy |
+| Debian 14 | `1.25.12` | 🪦 legacy |
+| Debian 13 | `1.23.1` | 🪦 legacy |
+| Ubuntu 26.04 LTS | `1.24.13` | 🪦 legacy |
+| Ubuntu 24.04 LTS | `1.22.2` | 🪦 legacy |
+| Arch | `1.27.0` | ⚠️ outdated |
+| Homebrew | `1.27.1` | ✅ latest |
+| Fedora rawhide | `1.27.1` | ✅ latest |
+| Nix unstable | `1.26.7` | 🪦 legacy |
+| Void | `1.26.5` | ⚠️ outdated |
+| Alpine edge | `1.27.1` | ✅ latest |
+| openSUSE Tumbleweed | `1.27` | ⚠️ outdated |
+
 ## 改进这些数据
 
 go 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索引维护——这是一份由 x-cmd 在安装时读取的精选 YAML 包列表。如果 `go` 缺失、过期，或安装行为有问题，欢迎在该 repo 提 issue 或 PR：
@@ -65,4 +87,4 @@ go 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) 索�
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260910.yml` · 2026-09-10T05:22:50Z._
+_数据快照: `data/card/260910.yml` · 2026-09-10T21:29:54Z._

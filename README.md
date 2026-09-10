@@ -12,35 +12,13 @@ The Go programming language
 x install go
 ```
 
-## Source
+## Code insight
 
-- **Upstream**: <https://github.com/golang/go>
-- **Homepage**: <https://go.dev>
-- **License**: BSD-3-Clause
-
-## Popularity
-
-- **Stars**: 137,994 · **Forks**: 19,347 · **Open issues**: 73,325 · **Contributors**: 2,393
-
-## Totals (cumulative)
-
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 535 · **Closed issues**: 63705 · **Open issues**: 9620 · **Commits**: 67554
-
-## Recent activity
-
-| Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
-|---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 0 | 0 | 39 | 265 | 274 | 236 |
-| 90d | 2026-06-12 | 0 | 0 | 101 | 745 | 507 | 678 |
-| 360d | 2025-09-15 | 0 | 0 | 256 | 3552 | 1533 | 3044 |
-
-## Code size
-
-Total: **2,761,876** lines of code across **12462** files in the top 5 languages.
+Total: **2,762,126** lines of code across **12463** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,561,883 | 452,708 | 268,344 | 11693 |
+| Go | 2,562,133 | 452,790 | 268,376 | 11694 |
 | AssemblyGAS | 153,641 | 19,607 | 16,159 | 657 |
 | Json | 14,163 | 0 | 124 | 38 |
 | Html | 12,465 | 37 | 347 | 15 |
@@ -56,13 +34,57 @@ Lowest-scoring checks:
 - **Token-Permissions** (-1/10) — No tokens found
 - **Packaging** (-1/10) — packaging workflow not detected
 
+## Source
+
+- **Upstream**: <https://github.com/golang/go>
+- **Homepage**: <https://go.dev>
+- **License**: BSD-3-Clause
+
+## Popularity
+
+- **Stars**: 138,142 · **Forks**: 19,351 · **Open issues**: 73,345 · **Contributors**: 2,393
+
+## Totals (cumulative)
+
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 536 · **Closed issues**: 63717 · **Open issues**: 9628 · **Commits**: 67558
+
+## Recent activity
+
+| Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
+|---|---|---:|---:|---:|---:|---:|---:|
+| 30d | 2026-08-11 | 0 | 0 | 40 | 271 | 288 | 239 |
+| last60d | 2026-07-12 | 0 | 0 | 70 | 521 | 433 | 480 |
+| 90d | 2026-06-12 | 0 | 0 | 102 | 752 | 520 | 681 |
+| last180d | 2026-03-14 | 0 | 0 | 183 | 1841 | 928 | 1587 |
+| 360d | 2025-09-15 | 0 | 0 | 257 | 3559 | 1546 | 3047 |
+| last720d | 2024-09-20 | 0 | 0 | 322 | 7304 | 2587 | 6555 |
+
+## Distribution status
+
+Reported by **1225** distros on [repology.org](https://repology.org/project/go). **43** are ✅ on the latest upstream release, **168** are ⚠️ on an older version.
+
+| Distro | Version | Status |
+|--------|---------|--------|
+| Debian unstable | `1.25.12` | 🪦 legacy |
+| Debian 14 | `1.25.12` | 🪦 legacy |
+| Debian 13 | `1.23.1` | 🪦 legacy |
+| Ubuntu 26.04 LTS | `1.24.13` | 🪦 legacy |
+| Ubuntu 24.04 LTS | `1.22.2` | 🪦 legacy |
+| Arch | `1.27.0` | ⚠️ outdated |
+| Homebrew | `1.27.1` | ✅ latest |
+| Fedora rawhide | `1.27.1` | ✅ latest |
+| Nix unstable | `1.26.7` | 🪦 legacy |
+| Void | `1.26.5` | ⚠️ outdated |
+| Alpine edge | `1.27.1` | ✅ latest |
+| openSUSE Tumbleweed | `1.27` | ⚠️ outdated |
+
 ## Improve this data
 
 Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/install) index — a curated YAML package list that x-cmd consumes at install time. If `go` is missing, out of date, or installs incorrectly, please open an issue or PR there:
 
 - **Open an issue**: <https://github.com/x-cmd/install/issues/new>
-- **Edit the package entry**: <https://github.com/x-cmd/edit/main/go.yml> (or whichever path the index uses)
+- **Edit the package entry**: <https://github.com/x-cmd/install/edit/main/go.yml> (or whichever path the index uses)
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T05:22:49Z._
+_Snapshot: `data/card/260910.yml` · 2026-09-10T21:29:52Z._
