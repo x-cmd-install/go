@@ -2,12 +2,12 @@ about:
   description: "The Go programming language"
   license: BSD-3-Clause
   homepage: https://go.dev
-  head: e51216d
+  head: c50265b
   archived: false
   latestVersion: ""
   latestRelease: ""
   latestPrerelease: ""
-  collectedAt: 2026-09-10T05:21:27Z
+  collectedAt: 2026-09-10T17:22:09Z
 timeline:
   created: 2014-08-19
   lastCommit: 2026-09-10
@@ -15,15 +15,15 @@ timeline:
   lastRelease: 
   lastPrerelease: 
 popularity:
-  star: 137994
+  star: 137999
   watcher: 3347
-  fork: 19347
+  fork: 19350
   release: 0
   contributor: 2393
-  pullRequest: 5336
-  issue: 73325
+  pullRequest: 5337
+  issue: 73337
 language:
-  Go: 56440196
+  Go: 56442437
   Assembly: 3166601
   HTML: 2633010
   C: 97060
@@ -35,71 +35,71 @@ language:
   Dockerfile: 3563
   Makefile: 1854
   Awk: 450
-totalBytes: 62490694
+totalBytes: 62492935
 recent:
   last30d:
     since: 2026-08-11
     release: 0
     mergedPR: 0
-    openPR: 39
-    closedIssue: 265
-    openIssue: 274
-    commit: 236
+    openPR: 40
+    closedIssue: 269
+    openIssue: 282
+    commit: 238
   last60d:
     since: 2026-07-12
     release: 0
     mergedPR: 0
-    openPR: 69
-    closedIssue: 514
-    openIssue: 420
-    commit: 477
+    openPR: 70
+    closedIssue: 518
+    openIssue: 428
+    commit: 479
   last90d:
     since: 2026-06-12
     release: 0
     mergedPR: 0
-    openPR: 101
-    closedIssue: 745
-    openIssue: 507
-    commit: 678
+    openPR: 102
+    closedIssue: 749
+    openIssue: 515
+    commit: 680
   last180d:
     since: 2026-03-14
     release: 0
     mergedPR: 0
-    openPR: 182
-    closedIssue: 1834
-    openIssue: 915
-    commit: 1584
+    openPR: 183
+    closedIssue: 1838
+    openIssue: 923
+    commit: 1586
   last360d:
     since: 2025-09-15
     release: 0
     mergedPR: 0
-    openPR: 256
-    closedIssue: 3552
-    openIssue: 1533
-    commit: 3044
+    openPR: 257
+    closedIssue: 3556
+    openIssue: 1541
+    commit: 3046
   last720d:
     since: 2024-09-20
     release: 0
     mergedPR: 0
-    openPR: 321
-    closedIssue: 7296
-    openIssue: 2575
-    commit: 6551
+    openPR: 322
+    closedIssue: 7301
+    openIssue: 2582
+    commit: 6554
 total:
   release: 0
   mergedPR: 1
-  openPR: 535
-  closedIssue: 63705
-  openIssue: 9620
-  commit: 67554
+  openPR: 536
+  closedIssue: 63710
+  openIssue: 9627
+  commit: 67557
 ---
 path: /home/runner/.x-repo/github.com/golang/go
-collectedAt: 2026-09-10T05:22:39Z
+collectedAt: 2026-09-10T17:23:37Z
 loc:
   Go:
-    code: 2561883
-    comments: 452708
-    blanks: 268344
+    code: 2561921
+    comments: 452733
+    blanks: 268356
     files: 11693
   AssemblyGAS:
     code: 153641
@@ -227,9 +227,9 @@ loc:
     blanks: 14806
     files: 1475
 total:
-  code: 2771511
-  comments: 712760
-  blanks: 303830
+  code: 2771549
+  comments: 712785
+  blanks: 303842
   files: 14255
 ---
 date: "2026-09-07"
