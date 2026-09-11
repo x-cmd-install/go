@@ -14,11 +14,11 @@ x install go
 
 ## Code insight
 
-Total: **2,762,126** lines of code across **12463** files in the top 5 languages.
+Total: **2,762,253** lines of code across **12463** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,562,133 | 452,790 | 268,376 | 11694 |
+| Go | 2,562,260 | 452,799 | 268,396 | 11694 |
 | AssemblyGAS | 153,641 | 19,607 | 16,159 | 657 |
 | Json | 14,163 | 0 | 124 | 38 |
 | Html | 12,465 | 37 | 347 | 15 |
@@ -42,22 +42,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 138,347 · **Forks**: 19,352 · **Open issues**: 73,346 · **Contributors**: 2,393
+- **Stars**: 138,402 · **Forks**: 19,353 · **Open issues**: 73,348 · **Contributors**: 2,393
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 536 · **Closed issues**: 63717 · **Open issues**: 9629 · **Commits**: 67558
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 536 · **Closed issues**: 63717 · **Open issues**: 9631 · **Commits**: 67559
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-11 | 0 | 0 | 40 | 271 | 289 | 239 |
-| last60d | 2026-07-12 | 0 | 0 | 70 | 521 | 434 | 480 |
-| 90d | 2026-06-12 | 0 | 0 | 102 | 752 | 521 | 681 |
-| last180d | 2026-03-14 | 0 | 0 | 183 | 1841 | 929 | 1587 |
-| 360d | 2025-09-15 | 0 | 0 | 257 | 3559 | 1547 | 3047 |
-| last720d | 2024-09-20 | 0 | 0 | 322 | 7304 | 2588 | 6555 |
+| 30d | 2026-08-12 | 0 | 0 | 39 | 253 | 288 | 240 |
+| last60d | 2026-07-13 | 0 | 0 | 66 | 517 | 431 | 481 |
+| 90d | 2026-06-13 | 0 | 0 | 99 | 749 | 520 | 682 |
+| last180d | 2026-03-15 | 0 | 0 | 183 | 1838 | 927 | 1588 |
+| 360d | 2025-09-16 | 0 | 0 | 257 | 3552 | 1546 | 3048 |
+| last720d | 2024-09-21 | 0 | 0 | 320 | 7297 | 2588 | 6552 |
 
 ## Distribution status
 
@@ -87,4 +87,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260910.yml` · 2026-09-10T22:34:39Z._
+_Snapshot: `data/card/260911.yml` · 2026-09-11T05:23:02Z._
