@@ -385,3 +385,4 @@ checks:
       - 'Info:   0 out of   2 containerImage dependencies pinned'
       - 'Info:   0 out of   1 downloadThenRun dependencies pinned'
       - 'Info:   2 out of   2 goCommand dependencies pinned'
+---
