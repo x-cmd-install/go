@@ -42,22 +42,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 139,293 · **Forks**: 22,575 · **Open issues**: 74,051 · **Contributors**: 2,419
+- **Stars**: 139,372 · **Forks**: 22,654 · **Open issues**: 74,065 · **Contributors**: 2,419
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 591 · **Closed issues**: 64295 · **Open issues**: 9756 · **Commits**: 68140
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 594 · **Closed issues**: 64298 · **Open issues**: 9767 · **Commits**: 68140
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-18 | 0 | 0 | 88 | 270 | 319 | 230 |
-| last60d | 2026-08-19 | 0 | 0 | 121 | 641 | 517 | 613 |
-| 90d | 2026-07-20 | 0 | 0 | 147 | 925 | 645 | 886 |
-| last180d | 2026-04-21 | 0 | 0 | 227 | 1866 | 994 | 1721 |
-| 360d | 2025-10-23 | 0 | 0 | 306 | 3670 | 1646 | 3188 |
-| last720d | 2024-10-28 | 0 | 0 | 371 | 7452 | 2685 | 6850 |
+| 30d | 2026-09-19 | 0 | 0 | 91 | 266 | 327 | 230 |
+| last60d | 2026-08-20 | 0 | 0 | 124 | 627 | 522 | 613 |
+| 90d | 2026-07-21 | 0 | 0 | 144 | 920 | 653 | 886 |
+| last180d | 2026-04-22 | 0 | 0 | 230 | 1856 | 1002 | 1721 |
+| 360d | 2025-10-24 | 0 | 0 | 308 | 3664 | 1657 | 3188 |
+| last720d | 2024-10-29 | 0 | 0 | 374 | 7435 | 2681 | 6825 |
 
 ## Improve this data
 
@@ -68,4 +68,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261018.yml` · 2026-10-18T05:02:36Z._
+_Snapshot: `data/card/261019.yml` · 2026-10-19T05:15:58Z._
