@@ -14,12 +14,12 @@ x install go
 
 ## Code insight
 
-Total: **2,811,233** lines of code across **12638** files in the top 5 languages.
+Total: **2,813,700** lines of code across **12637** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,609,911 | 473,856 | 274,893 | 11859 |
-| AssemblyGAS | 154,649 | 19,716 | 16,293 | 662 |
+| Go | 2,612,411 | 474,306 | 275,274 | 11857 |
+| AssemblyGAS | 154,616 | 19,716 | 16,294 | 663 |
 | Json | 14,173 | 0 | 124 | 38 |
 | Html | 12,540 | 37 | 350 | 15 |
 | Yaml | 6,335 | 384 | 329 | 64 |
@@ -31,8 +31,8 @@ Overall score: **6.2 / 10**
 Lowest-scoring checks:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Dangerous-Workflow** (-1/10) — no workflows found
 - **Token-Permissions** (-1/10) — No tokens found
+- **Dangerous-Workflow** (-1/10) — no workflows found
 
 ## Source
 
@@ -42,41 +42,41 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 139,597 · **Forks**: 21,539 · **Open issues**: 74,236 · **Contributors**: 2,420
+- **Stars**: 139,629 · **Forks**: 21,562 · **Open issues**: 74,320 · **Contributors**: 2,422
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 604 · **Closed issues**: 64383 · **Open issues**: 9853 · **Commits**: 68207
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 608 · **Closed issues**: 64425 · **Open issues**: 9895 · **Commits**: 68228
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-26 | 0 | 0 | 85 | 245 | 381 | 189 |
-| last60d | 2026-08-27 | 0 | 0 | 129 | 567 | 584 | 573 |
-| 90d | 2026-07-28 | 0 | 0 | 152 | 921 | 723 | 888 |
-| last180d | 2026-04-29 | 0 | 0 | 233 | 1870 | 1077 | 1724 |
-| 360d | 2025-10-31 | 0 | 0 | 317 | 3688 | 1735 | 3180 |
-| last720d | 2024-11-05 | 0 | 0 | 383 | 7440 | 2761 | 6821 |
+| 30d | 2026-09-27 | 0 | 0 | 87 | 280 | 418 | 208 |
+| last60d | 2026-08-28 | 0 | 0 | 130 | 593 | 615 | 593 |
+| 90d | 2026-07-29 | 0 | 0 | 154 | 952 | 763 | 908 |
+| last180d | 2026-04-30 | 0 | 0 | 236 | 1847 | 1111 | 1745 |
+| 360d | 2025-11-01 | 0 | 0 | 320 | 3724 | 1776 | 3201 |
+| last720d | 2024-11-06 | 0 | 0 | 387 | 7470 | 2793 | 6827 |
 
 ## Distribution status
 
-Reported by **1207** distros on [repology.org](https://repology.org/project/go). **57** are ✅ on the latest upstream release, **145** are ⚠️ on an older version.
+Reported by **1209** distros on [repology.org](https://repology.org/project/go). **61** are ✅ on the latest upstream release, **141** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
-| Debian unstable | `1.26.5` | 🪦 legacy |
-| Debian 14 | `1.26.5` | 🪦 legacy |
-| Debian 13 | `1.24.4` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `1.25.14` | 🪦 legacy |
-| Ubuntu 24.04 LTS | `1.25.14` | 🪦 legacy |
+| Debian unstable | `1.24.1` | 🪦 legacy |
+| Debian 14 | `1.24.9` | 🪦 legacy |
+| Debian 13 | `1.23.1` | 🪦 legacy |
+| Ubuntu 26.04 LTS | `1.24.13` | 🪦 legacy |
+| Ubuntu 24.04 LTS | `1.22.2` | 🪦 legacy |
 | Arch | `1.27.3` | ✅ latest |
-| Homebrew | `1.26.10` | 🪦 legacy |
+| Homebrew | `1.22.12` | 🪦 legacy |
 | Fedora rawhide | `1.27.3` | ✅ latest |
 | Nix unstable | `1.26.10` | 🪦 legacy |
-| Void | `1.27.3` | ✅ latest |
+| Void | `1.20.7` | 🪦 legacy |
 | Alpine edge | `1.27.2` | ⚠️ outdated |
-| openSUSE Tumbleweed | `1.27` | 🪦 legacy |
+| openSUSE Tumbleweed | `1.21.13` | 🪦 legacy |
 
 ## Improve this data
 
@@ -87,4 +87,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261026.yml` · 2026-10-26T05:17:14Z._
+_Snapshot: `data/card/261027.yml` · 2026-10-27T05:37:55Z._
