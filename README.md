@@ -14,11 +14,11 @@ x install go
 
 ## Code insight
 
-Total: **2,819,672** lines of code across **12658** files in the top 5 languages.
+Total: **2,819,695** lines of code across **12658** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,616,146 | 475,463 | 275,664 | 11877 |
+| Go | 2,616,169 | 475,468 | 275,667 | 11877 |
 | AssemblyGAS | 156,826 | 19,985 | 16,620 | 664 |
 | Json | 14,173 | 0 | 124 | 38 |
 | Html | 12,540 | 37 | 350 | 15 |
@@ -42,22 +42,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 139,473 · **Forks**: 21,611 · **Open issues**: 74,427 · **Contributors**: 2,427
+- **Stars**: 139,711 · **Forks**: 21,012 · **Open issues**: 74,436 · **Contributors**: 2,427
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 614 · **Closed issues**: 65195 · **Open issues**: 9232 · **Commits**: 68308
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 614 · **Closed issues**: 65197 · **Open issues**: 9239 · **Commits**: 68309
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-01 | 0 | 0 | 83 | 262 | 401 | 268 |
-| last60d | 2026-09-01 | 0 | 0 | 130 | 610 | 617 | 663 |
-| 90d | 2026-08-02 | 0 | 0 | 161 | 993 | 774 | 981 |
-| last180d | 2026-05-04 | 0 | 0 | 235 | 1882 | 1134 | 1819 |
-| 360d | 2025-11-05 | 0 | 0 | 321 | 3922 | 1649 | 3275 |
-| last720d | 2024-11-10 | 0 | 0 | 390 | 7865 | 2477 | 6875 |
+| 30d | 2026-10-02 | 0 | 0 | 84 | 261 | 397 | 183 |
+| last60d | 2026-09-02 | 0 | 0 | 127 | 604 | 619 | 557 |
+| 90d | 2026-08-03 | 0 | 0 | 162 | 989 | 778 | 941 |
+| last180d | 2026-05-05 | 0 | 0 | 236 | 1868 | 1137 | 1736 |
+| 360d | 2025-11-06 | 0 | 0 | 322 | 3916 | 1652 | 3214 |
+| last720d | 2024-11-11 | 0 | 0 | 391 | 7856 | 2480 | 6876 |
 
 ## Distribution status
 
@@ -67,7 +67,7 @@ Reported by **1207** distros on [repology.org](https://repology.org/project/go).
 |--------|---------|--------|
 | Debian unstable | `1.26.5` | 🪦 legacy |
 | Debian 14 | `1.26.5` | 🪦 legacy |
-| Debian 13 | `1.23.1` | 🪦 legacy |
+| Debian 13 | `1.24.4` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `1.25.14` | 🪦 legacy |
 | Ubuntu 24.04 LTS | `1.25.14` | 🪦 legacy |
 | Arch | `1.27.3` | ✅ latest |
@@ -87,4 +87,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261031.yml` · 2026-10-31T06:09:29Z._
+_Snapshot: `data/card/261101.yml` · 2026-11-01T06:42:59Z._
