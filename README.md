@@ -14,12 +14,12 @@ x install go
 
 ## Code insight
 
-Total: **2,823,652** lines of code across **12676** files in the top 5 languages.
+Total: **2,824,175** lines of code across **12677** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,619,542 | 477,513 | 276,023 | 11893 |
-| AssemblyGAS | 157,380 | 20,149 | 16,703 | 666 |
+| Go | 2,620,049 | 477,612 | 276,071 | 11894 |
+| AssemblyGAS | 157,392 | 20,149 | 16,703 | 666 |
 | Json | 14,173 | 0 | 124 | 38 |
 | Html | 12,540 | 37 | 350 | 15 |
 | Yaml | 6,388 | 390 | 330 | 64 |
@@ -31,8 +31,8 @@ Overall score: **6.2 / 10**
 Lowest-scoring checks:
 
 - **Packaging** (-1/10) — packaging workflow not detected
-- **Token-Permissions** (-1/10) — No tokens found
 - **Dangerous-Workflow** (-1/10) — no workflows found
+- **Token-Permissions** (-1/10) — No tokens found
 
 ## Source
 
@@ -42,22 +42,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 139,543 · **Forks**: 21,056 · **Open issues**: 74,495 · **Contributors**: 2,428
+- **Stars**: 139,561 · **Forks**: 21,020 · **Open issues**: 74,510 · **Contributors**: 2,427
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 620 · **Closed issues**: 65210 · **Open issues**: 9285 · **Commits**: 68361
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 625 · **Closed issues**: 65223 · **Open issues**: 9287 · **Commits**: 68384
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-04 | 0 | 0 | 80 | 261 | 439 | 216 |
-| last60d | 2026-09-04 | 0 | 0 | 133 | 588 | 658 | 595 |
-| 90d | 2026-08-05 | 0 | 0 | 166 | 964 | 818 | 981 |
-| last180d | 2026-05-07 | 0 | 0 | 242 | 1845 | 1177 | 1776 |
-| 360d | 2025-11-08 | 0 | 0 | 327 | 3912 | 1697 | 3254 |
-| last720d | 2024-11-13 | 0 | 0 | 397 | 7844 | 2519 | 6910 |
+| 30d | 2026-10-05 | 0 | 0 | 87 | 262 | 433 | 238 |
+| last60d | 2026-09-05 | 0 | 0 | 140 | 598 | 661 | 618 |
+| 90d | 2026-08-06 | 0 | 0 | 171 | 962 | 818 | 1005 |
+| last180d | 2026-05-08 | 0 | 0 | 246 | 1841 | 1178 | 1800 |
+| 360d | 2025-11-09 | 0 | 0 | 333 | 3924 | 1701 | 3278 |
+| last720d | 2024-11-14 | 0 | 0 | 402 | 7835 | 2519 | 6912 |
 
 ## Distribution status
 
@@ -87,4 +87,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261103.yml` · 2026-11-03T07:47:59Z._
+_Snapshot: `data/card/261104.yml` · 2026-11-04T06:58:35Z._
