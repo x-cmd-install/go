@@ -1,3 +1,11 @@
+- repo: gnuguix
+  srcname: go
+  binname: go
+  visiblename: go
+  version: 1.26.10
+  origversion: null
+  status: legacy
+  summary: Compiler and libraries for Go, a statically-typed language
 - repo: amazon_2
   srcname: golang
   visiblename: golang
@@ -81,6 +89,20 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.26.7
+  origversion: 1.26.7-1.module_el8.10.0+4264+117c8fc2
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
 - repo: aerynos
   srcname: golang
   visiblename: golang
@@ -101,20 +123,6 @@
     - BSD and Public Domain
   categories:
     - Development/Languages
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.26.7
-  origversion: 1.26.7-1.module_el8.10.0+4264+117c8fc2
-  status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
 - repo: almalinux_9
   subrepo: AppStream
   srcname: golang
@@ -1316,20 +1324,6 @@
     - BSD-3-Clause AND LicenseRef-Fedora-Public-Domain
   categories:
     - Unspecified
-- repo: liguros_develop
-  srcname: dev-lang/go
-  visiblename: dev-lang/go
-  version: 1.26.7
-  origversion: null
-  status: legacy
-  summary: A concurrent garbage collected and typesafe programming language
-  maintainers:
-    - williamh@gentoo.org
-    - arthurzam@gentoo.org
-  licenses:
-    - BSD
-  categories:
-    - dev-lang
 - repo: fedora_44
   subrepo: updates
   srcname: golang
@@ -1548,14 +1542,6 @@
   origversion: null
   status: legacy
   summary: Compiler and libraries for Go, a statically-typed language
-- repo: gnuguix
-  srcname: go
-  binname: go
-  visiblename: go
-  version: 1.26.10
-  origversion: null
-  status: legacy
-  summary: Compiler and libraries for Go, a statically-typed language
 - repo: haikuports_master
   srcname: dev-lang/golang
   visiblename: dev-lang/golang
@@ -1675,6 +1661,20 @@
   srcname: dev-lang/go
   visiblename: dev-lang/go
   version: 1.25.13
+  origversion: null
+  status: legacy
+  summary: A concurrent garbage collected and typesafe programming language
+  maintainers:
+    - williamh@gentoo.org
+    - arthurzam@gentoo.org
+  licenses:
+    - BSD
+  categories:
+    - dev-lang
+- repo: liguros_develop
+  srcname: dev-lang/go
+  visiblename: dev-lang/go
+  version: 1.26.7
   origversion: null
   status: legacy
   summary: A concurrent garbage collected and typesafe programming language
@@ -1853,16 +1853,6 @@
     - BSD
   categories:
     - lang
-- repo: msys2_clangarm64
-  srcname: mingw-w64-go
-  binname: mingw-w64-clang-aarch64-go
-  visiblename: mingw-w64-clang-aarch64-go
-  version: 1.27.3
-  origversion: 1.27.3-1
-  status: newest
-  summary: The Go programming language (mingw-w64)
-  licenses:
-    - spdx:BSD-3-Clause
 - repo: mageia_9
   subrepo: core/updates
   srcname: golang
@@ -2040,6 +2030,16 @@
   srcname: mingw-w64-go
   binname: mingw-w64-clang-x86_64-go
   visiblename: mingw-w64-clang-x86_64-go
+  version: 1.27.3
+  origversion: 1.27.3-1
+  status: newest
+  summary: The Go programming language (mingw-w64)
+  licenses:
+    - spdx:BSD-3-Clause
+- repo: msys2_clangarm64
+  srcname: mingw-w64-go
+  binname: mingw-w64-clang-aarch64-go
+  visiblename: mingw-w64-clang-aarch64-go
   version: 1.27.3
   origversion: 1.27.3-1
   status: newest
@@ -2469,6 +2469,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+- repo: pkgsrc_2026_3
+  srcname: lang/go126
+  binname: go126
+  visiblename: lang/go126
+  version: 1.26.10
+  origversion: null
+  status: legacy
+  summary: The Go programming language
+  maintainers:
+    - bsiegert@netbsd.org
+  categories:
+    - lang
 - repo: opensuse_tumbleweed
   subrepo: src-oss
   srcname: go
@@ -2638,18 +2650,16 @@
     - bsiegert@netbsd.org
   categories:
     - lang
-- repo: pkgsrc_2026_3
-  srcname: lang/go126
-  binname: go126
-  visiblename: lang/go126
-  version: 1.26.10
-  origversion: null
-  status: legacy
-  summary: The Go programming language
-  maintainers:
-    - bsiegert@netbsd.org
+- repo: pclinuxos
+  srcname: golang
+  visiblename: golang
+  version: 1.25.1
+  origversion: 1.25.1-1pclos2025
+  status: outdated
+  summary: The Go Programming Language
   categories:
-    - lang
+    - Development/Other
+  vulnerable: true
 - repo: pkgsrc_current
   srcname: lang/go
   binname: go
@@ -2662,6 +2672,16 @@
     - pkgsrc-users@netbsd.org
   categories:
     - lang
+- repo: starkos
+  subrepo: main
+  srcname: go
+  visiblename: go
+  version: 1.27.3
+  origversion: 1.27.3-1
+  status: newest
+  summary: The Go Programming Language
+  maintainers:
+    - starkos@disroot.org
 - repo: pkgsrc_current
   srcname: lang/go127
   binname: go127
@@ -2704,6 +2724,28 @@
   version: 1.27.3
   origversion: 1.27.3-1
   status: newest
+- repo: stalix
+  srcname: bin/go/lang/27
+  binname: bin/go/lang/27
+  visiblename: bin/go/lang/27
+  version: 1.27.3
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
+- repo: stalix_dev
+  srcname: bin/go/lang/27
+  binname: bin/go/lang/27
+  visiblename: bin/go/lang/27
+  version: 1.27.3
+  origversion: null
+  status: newest
+  maintainers:
+    - anton@samokhvalov.xyz
+  categories:
+    - bin
 - repo: raspbian_testing
   subrepo: main
   srcname: golang-1.25
@@ -3023,38 +3065,6 @@
     - BSD-3-Clause
   categories:
     - build-tools
-- repo: stalix
-  srcname: bin/go/lang/27
-  binname: bin/go/lang/27
-  visiblename: bin/go/lang/27
-  version: 1.27.3
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
-- repo: stalix_dev
-  srcname: bin/go/lang/27
-  binname: bin/go/lang/27
-  visiblename: bin/go/lang/27
-  version: 1.27.3
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
-- repo: starkos
-  subrepo: main
-  srcname: go
-  visiblename: go
-  version: 1.27.3
-  origversion: 1.27.3-1
-  status: newest
-  summary: The Go Programming Language
-  maintainers:
-    - starkos@disroot.org
 - repo: t2
   srcname: go
   visiblename: go
@@ -3109,15 +3119,6 @@
   summary: free software compiler and tools for the Go programming language
   licenses:
     - 3-clause BSD License
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.26.5
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
 - repo: ubuntu_22_04
   subrepo: jammy-updates/universe
   srcname: golang-1.25
@@ -3381,6 +3382,15 @@
 - repo: xrepo
   srcname: go
   visiblename: go
+  version: 1.26.5
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
+- repo: xrepo
+  srcname: go
+  visiblename: go
   version: 1.26.6
   origversion: null
   status: legacy
@@ -3441,527 +3451,11 @@
   summary: The Go Programming Language
   licenses:
     - BSD-3-Clause
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.7
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.5
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.6
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.8
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.12.9
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.13"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.5
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.18.5
-  origversion: 1.18.5-1.amzn2
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.6
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.4
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.14"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.6
-  origversion: 1.18.6-1.amzn2
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.8
-  origversion: 1.18.8-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.8
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.2
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.3
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.5
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.20.10
-  origversion: 1.20.10-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.5
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.14.6
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.15"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.amzn2.0.6
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.20.5
-  origversion: 1.20.5-1.amzn2.0.2
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.20.12
-  origversion: 1.20.12-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.5
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.6
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.20.6
-  origversion: 1.20.6-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.7
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.20.7
-  origversion: 1.20.7-1.amzn2.0.1
+  version: 1.22.5
+  origversion: 1.22.5-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -3996,18 +3490,6 @@
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.22.5
-  origversion: 1.22.5-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
   version: 1.22.7
   origversion: 1.22.7-1.amzn2.0.1
   status: legacy
@@ -4016,6 +3498,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.3"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4053,6 +3547,18 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.3.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
 - repo: amazon_2
   srcname: golang
   visiblename: golang
@@ -4076,6 +3582,54 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.4"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.4.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.5.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.5.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4104,8 +3658,8 @@
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.24.13
-  origversion: 1.24.13-1.amzn2.0.1
+  version: 1.24.6
+  origversion: 1.24.6-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -4116,14 +3670,26 @@
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.24.6
-  origversion: 1.24.6-1.amzn2.0.1
+  version: 1.24.13
+  origversion: 1.24.13-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.6.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4149,18 +3715,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.15.8
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
 - repo: amazon_2
   srcname: golang
   visiblename: golang
@@ -4172,6 +3726,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.6.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4197,23 +3763,143 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.7.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.10.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.11.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.10.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.11"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.11.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.11.4
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.11.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.12"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
 - repo: amazon_2
   srcname: golang
   visiblename: golang
   version: 1.25.7
   origversion: 1.25.7-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.13.4
-  origversion: 1.13.4-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -4233,6 +3919,18 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.4
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
 - repo: amazon_2
   srcname: golang
   visiblename: golang
@@ -4244,6 +3942,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4257,36 +3967,35 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: golang
-  visiblename: golang
-  version: 1.15.12
-  origversion: 1.15.12-1.67.amzn1
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.6
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.15.12
-  origversion: 1.15.12-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
+    - Development
   vulnerable: true
 - repo: npackd_stable
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: "1.16"
+  version: 1.12.7
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.8
   origversion: null
   status: legacy
   licenses:
@@ -4306,20 +4015,17 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.25.5
-  origversion: 1.25.5-1.module_el8.10.0+4107+b32a33ce
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.12.9
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - packager@almalinux.org
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4333,23 +4039,23 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.16.1
-  origversion: null
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.9.4
+  origversion: 1.9.4-1.amzn2
   status: legacy
+  summary: The Go Programming Language
   licenses:
-    - MIT license
+    - BSD and Public Domain
   categories:
-    - Development
+    - Unspecified
   vulnerable: true
 - repo: npackd_stable
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.16.2
+  version: "1.13"
   origversion: null
   status: legacy
   licenses:
@@ -4361,7 +4067,7 @@
   srcname: golang
   visiblename: golang
   version: 1.9.4
-  origversion: 1.9.4-1.amzn2
+  origversion: 1.9.4-3.amzn2.0.2
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -4381,17 +4087,17 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.9.4
-  origversion: 1.9.4-3.amzn2.0.2
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.1
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4409,7 +4115,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.16.3
+  version: 1.18.2
   origversion: null
   status: legacy
   licenses:
@@ -4430,26 +4136,11 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.25.7
-  origversion: 1.25.7-1.module_el8.10.0+4117+b694c6c9
-  status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: npackd_stable
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.16.4
+  version: 1.13.3
   origversion: null
   status: legacy
   licenses:
@@ -4469,6 +4160,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.4
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: eurolinux_8
   subrepo: appstream
@@ -4496,6 +4199,18 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
 - repo: eurolinux_8
   subrepo: appstream
   srcname: golang
@@ -4509,17 +4224,251 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.21.9
+  origversion: 1.21.9-1.module+el8.10.0+21671+b35c3b78
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.20.12
+  origversion: 1.20.12-2.module+el8.9.0+21033+5795bdf6
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_9
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.17.12
+  origversion: 1.17.12-1.module+el8.6.0+16014+a372c00b
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: npackd_stable
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.16.5
+  version: 1.7.5
   origversion: null
   status: legacy
   licenses:
     - MIT license
   categories:
     - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.8.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.8.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.9"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.16.7
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.17"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.4
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.6
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.25.7
+  origversion: 1.25.7-1.module_el8.10.0+4117+b694c6c9
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.7
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.8
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.14"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.15.14
+  origversion: 1.15.14-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: almalinux_8
   subrepo: AppStream
@@ -4536,11 +4485,23 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.15.3
+  origversion: 1.15.3-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: npackd_stable
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.16.6
+  version: 1.9.1
   origversion: null
   status: legacy
   licenses:
@@ -4563,31 +4524,53 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.21.9
-  origversion: 1.21.9-1.module+el8.10.0+21671+b35c3b78
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.9.2
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
+    - Development
   vulnerable: true
-- repo: eurolinux_9
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.17.12
-  origversion: 1.17.12-1.module+el8.6.0+16014+a372c00b
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.1
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.9.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.2
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4601,96 +4584,41 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: golang
-  visiblename: golang
-  version: 1.15.14
-  origversion: 1.15.14-1.69.amzn1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: golang
-  visiblename: golang
-  version: 1.15.15
-  origversion: 1.15.15-1.71.amzn1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.15.14
-  origversion: 1.15.14-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.21.13
-  origversion: 1.21.13-2.module_el8.10.0+3895+92d465e0
-  status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_2
-  srcname: golang
-  visiblename: golang
-  version: 1.15.3
-  origversion: 1.15.3-1.amzn2.0.1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: golang
-  visiblename: golang
-  version: 1.13.15
-  origversion: 1.13.15-1.59.amzn1
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: amazon_1
-  subrepo: updates
   srcname: golang
   visiblename: golang
   version: 1.13.4
-  origversion: 1.13.4-1.57.amzn1
+  origversion: 1.13.4-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.15.12
+  origversion: 1.15.12-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.3
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: amazon_2
   srcname: golang
@@ -4716,12 +4644,237 @@
   categories:
     - Unspecified
   vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.16.15
+  origversion: 1.16.15-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.3
+  origversion: 1.18.3-1.amzn2
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.5
+  origversion: 1.18.5-1.amzn2
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.4
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.6
+  origversion: 1.18.6-1.amzn2
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.8
+  origversion: 1.18.8-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.2
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.3
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.4
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.5
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.amzn2.0.6
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.25.3
+  origversion: 1.25.3-2.module_el8.10.0+4074+24330916
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.25.5
+  origversion: 1.25.5-1.module_el8.10.0+4107+b32a33ce
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.20.10
+  origversion: 1.20.10-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.20.12
+  origversion: 1.20.12-1.amzn2.0.1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: almalinux_8
   subrepo: AppStream
   srcname: golang
   visiblename: golang
   version: 1.21.11
   origversion: 1.21.11-1.module_el8.10.0+3863+bb82df69
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - packager@almalinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: almalinux_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.21.13
+  origversion: 1.21.13-2.module_el8.10.0+3895+92d465e0
   status: legacy
   summary: The Go Programming Language
   maintainers:
@@ -4760,6 +4913,16 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: gobolinux
+  srcname: Golang-Bin
+  visiblename: Golang-Bin
+  version: 1.7.1
+  origversion: null
+  status: outdated
+  summary: The Go language
+  licenses:
+    - 3-clause BSD
   vulnerable: true
 - repo: almalinux_8
   subrepo: AppStream
@@ -4842,21 +5005,6 @@
   visiblename: golang
   version: 1.25.10
   origversion: 1.25.10-1.module_el8.10.0+4187+c45165c4
-  status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - packager@almalinux.org
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: almalinux_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.25.3
-  origversion: 1.25.3-2.module_el8.10.0+4074+24330916
   status: legacy
   summary: The Go Programming Language
   maintainers:
@@ -5036,6 +5184,18 @@
   licenses:
     - BSD-3-Clause
   vulnerable: true
+- repo: amazon_2
+  srcname: golang
+  visiblename: golang
+  version: 1.20.5
+  origversion: 1.20.5-1.amzn2.0.2
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: alpine_3_20
   subrepo: community
   srcname: go
@@ -5106,6 +5266,19 @@
   licenses:
     - BSD-3-Clause
   vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
+  version: 1.18.6
+  origversion: 1.18.6-1.43.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
 - repo: alpine_3_23
   subrepo: community
   srcname: go
@@ -5137,8 +5310,8 @@
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.16.15
-  origversion: 1.16.15-1.amzn2.0.1
+  version: 1.20.6
+  origversion: 1.20.6-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -5149,8 +5322,8 @@
 - repo: amazon_2
   srcname: golang
   visiblename: golang
-  version: 1.18.3
-  origversion: 1.18.3-1.amzn2
+  version: 1.20.7
+  origversion: 1.20.7-1.amzn2.0.1
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -5266,6 +5439,71 @@
   subrepo: updates
   srcname: golang
   visiblename: golang
+  version: 1.13.15
+  origversion: 1.13.15-1.59.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
+  version: 1.13.4
+  origversion: 1.13.4-1.57.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
+  version: 1.15.12
+  origversion: 1.15.12-1.67.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
+  version: 1.15.14
+  origversion: 1.15.14-1.69.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
+  version: 1.15.15
+  origversion: 1.15.15-1.71.amzn1
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: amazon_1
+  subrepo: updates
+  srcname: golang
+  visiblename: golang
   version: 1.15.3
   origversion: 1.15.3-1.63.amzn1
   status: legacy
@@ -5327,18 +5565,17 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: amazon_1
-  subrepo: updates
-  srcname: golang
-  visiblename: golang
-  version: 1.18.6
-  origversion: 1.18.6-1.43.amzn1
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.14.6
+  origversion: null
   status: legacy
-  summary: The Go Programming Language
   licenses:
-    - BSD and Public Domain
+    - MIT license
   categories:
-    - Unspecified
+    - Development
   vulnerable: true
 - repo: amazon_1
   subrepo: updates
@@ -5566,18 +5803,6 @@
   licenses:
     - BSD
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.16.7
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
 - repo: carbs
   subrepo: extra
   srcname: go
@@ -5785,6 +6010,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.7
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: centos_stream_8
   subrepo: AppStream
@@ -6122,18 +6359,6 @@
   categories:
     - Unspecified
   vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.17"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
 - repo: chimera
   subrepo: main
   srcname: go-bootstrap
@@ -6290,6 +6515,29 @@
     - golang
   vulnerable: true
 - repo: debian_12
+  subrepo: bookworm-security/main
+  srcname: golang-1.19
+  binnames:
+    - golang-1.19-go
+    - golang-1.19-src
+    - golang-1.19-doc
+    - golang-1.19
+  visiblename: golang-1.19
+  version: 1.19.8
+  origversion: 1.19.8-2
+  status: outdated
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: debian_12
   subrepo: bookworm/main
   srcname: golang-1.19
   binnames:
@@ -6332,64 +6580,6 @@
     - stapelberg@debian.org
     - tianon@debian.org
     - toddy@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: debian_12
-  subrepo: bookworm-security/main
-  srcname: golang-1.19
-  binnames:
-    - golang-1.19-go
-    - golang-1.19-src
-    - golang-1.19-doc
-    - golang-1.19
-  visiblename: golang-1.19
-  version: 1.19.8
-  origversion: 1.19.8-2
-  status: outdated
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.15.14
-  origversion: 1.15.14-1.module+el8.4.0+11833+614b07b8
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: debian_14
-  subrepo: forky/main
-  srcname: golang-1.24
-  binnames:
-    - golang-1.24-go
-    - golang-1.24-src
-    - golang-1.24-doc
-    - golang-1.24
-  visiblename: golang-1.24
-  version: 1.24.9
-  origversion: 1.24.9-1
-  status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
   categories:
     - misc
   vulnerable: true
@@ -6438,6 +6628,27 @@
     - toddy@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: eurolinux_9
+  subrepo: appstream
+  srcname: golang
+  binnames:
+    - golang
+    - golang-docs
+    - golang-misc
+    - golang-tests
+    - golang-src
+    - golang-bin
+    - golang-race
+  visiblename: golang
+  version: 1.17.2
+  origversion: 1.17.2-1.el9
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: debian_12_backports
   subrepo: bookworm-backports/main
@@ -6682,30 +6893,17 @@
   categories:
     - misc
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.15.14
-  origversion: 1.15.14-2.module+el8.4.0+12542+e3fec473
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: deepin_25
   subrepo: main
-  srcname: golang-1.17
+  srcname: golang-1.21
   binnames:
-    - golang-1.17-go
-    - golang-1.17-src
-    - golang-1.17-doc
-    - golang-1.17
-  visiblename: golang-1.17
-  version: 1.17.7
-  origversion: null
+    - golang-1.21-go
+    - golang-1.21-src
+    - golang-1.21-doc
+    - golang-1.21
+  visiblename: golang-1.21
+  version: 1.21.10
+  origversion: 1.21.10-1
   status: legacy
   maintainers:
     - team+go-compiler@tracker.debian.org
@@ -6718,15 +6916,50 @@
   categories:
     - golang
   vulnerable: true
-- repo: gobolinux
-  srcname: Golang
-  visiblename: Golang
-  version: 1.17.1
-  origversion: null
-  status: outdated
-  summary: The Go language
-  licenses:
-    - 3-clause BSD
+- repo: deepin_23
+  subrepo: main
+  srcname: golang-1.20
+  binnames:
+    - golang-1.20-go
+    - golang-1.20-src
+    - golang-1.20-doc
+    - golang-1.20
+  visiblename: golang-1.20
+  version: 1.20.4
+  origversion: 1.20.4-1deepin2
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - golang
+  vulnerable: true
+- repo: debian_14
+  subrepo: forky/main
+  srcname: golang-1.24
+  binnames:
+    - golang-1.24-go
+    - golang-1.24-src
+    - golang-1.24-doc
+    - golang-1.24
+  visiblename: golang-1.24
+  version: 1.24.9
+  origversion: 1.24.9-1
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+  categories:
+    - misc
   vulnerable: true
 - repo: debian_14
   subrepo: forky/main
@@ -6822,15 +7055,15 @@
   vulnerable: true
 - repo: deepin_25
   subrepo: main
-  srcname: golang-1.20
+  srcname: golang-1.22
   binnames:
-    - golang-1.20-go
-    - golang-1.20-src
-    - golang-1.20-doc
-    - golang-1.20
-  visiblename: golang-1.20
-  version: 1.20.4
-  origversion: 1.20.4-1deepin2
+    - golang-1.22-go
+    - golang-1.22-src
+    - golang-1.22-doc
+    - golang-1.22
+  visiblename: golang-1.22
+  version: 1.22.12
+  origversion: 1.22.12-3deepin1
   status: legacy
   maintainers:
     - team+go-compiler@tracker.debian.org
@@ -6839,7 +7072,6 @@
     - paultag@debian.org
     - stapelberg@debian.org
     - tianon@debian.org
-    - toddy@debian.org
   categories:
     - golang
   vulnerable: true
@@ -6889,19 +7121,6 @@
   categories:
     - golang
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.16.12
-  origversion: 1.16.12-1.module+el8.5.0+13637+960c7771
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: debian_14
   subrepo: forky/main
   srcname: golang-1.26
@@ -6924,6 +7143,19 @@
     - toddy@debian.org
   categories:
     - golang
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.18.9
+  origversion: 1.18.9-1.module+el8.7.0+17640+84246675
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
@@ -6992,19 +7224,6 @@
   categories:
     - golang
   vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.16.7
-  origversion: 1.16.7-1.module+el8.5.0+12246+1aac4e3f
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
   srcname: golang-1.26
@@ -7051,28 +7270,18 @@
   categories:
     - golang
   vulnerable: true
-- repo: deepin_23
-  subrepo: main
-  srcname: golang-1.17
-  binnames:
-    - golang-1.17-go
-    - golang-1.17-src
-    - golang-1.17-doc
-    - golang-1.17
-  visiblename: golang-1.17
-  version: 1.17.7
-  origversion: null
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.19.6
+  origversion: 1.19.6-1.module+el8.8.0+18289+edd6c8b6
   status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
   categories:
-    - golang
+    - Unspecified
   vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
@@ -7143,6 +7352,29 @@
   categories:
     - golang
   vulnerable: true
+- repo: deepin_25
+  subrepo: main
+  srcname: golang-1.20
+  binnames:
+    - golang-1.20-go
+    - golang-1.20-src
+    - golang-1.20-doc
+    - golang-1.20
+  visiblename: golang-1.20
+  version: 1.20.4
+  origversion: 1.20.4-1deepin2
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - golang
+  vulnerable: true
 - repo: debian_unstable
   subrepo: sid/main
   srcname: golang-1.26
@@ -7193,8 +7425,8 @@
   subrepo: appstream
   srcname: golang
   visiblename: golang
-  version: 1.17.10
-  origversion: 1.17.10-1.module+el8.6.0+15486+6d4da7db
+  version: 1.20.10
+  origversion: 1.20.10-1.module+el8.9.0+20382+04f7fe80
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -7336,16 +7568,16 @@
     - misc
   vulnerable: true
 - repo: deepin_25
-  subrepo: main
-  srcname: golang-1.21
+  subrepo: community
+  srcname: golang-1.23
   binnames:
-    - golang-1.21-go
-    - golang-1.21-src
-    - golang-1.21-doc
-    - golang-1.21
-  visiblename: golang-1.21
-  version: 1.21.10
-  origversion: 1.21.10-1
+    - golang-1.23-go
+    - golang-1.23-src
+    - golang-1.23-doc
+    - golang-1.23
+  visiblename: golang-1.23
+  version: 1.23.6
+  origversion: 1.23.6-4
   status: legacy
   maintainers:
     - team+go-compiler@tracker.debian.org
@@ -7354,22 +7586,8 @@
     - paultag@debian.org
     - stapelberg@debian.org
     - tianon@debian.org
-    - toddy@debian.org
   categories:
-    - golang
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.17.12
-  origversion: 1.17.12-1.module+el8.6.0+16014+a372c00b
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
+    - misc
   vulnerable: true
 - repo: deepin_unstable
   subrepo: main
@@ -7413,15 +7631,15 @@
   vulnerable: true
 - repo: deepin_23
   subrepo: main
-  srcname: golang-1.20
+  srcname: golang-1.17
   binnames:
-    - golang-1.20-go
-    - golang-1.20-src
-    - golang-1.20-doc
-    - golang-1.20
-  visiblename: golang-1.20
-  version: 1.20.4
-  origversion: 1.20.4-1deepin2
+    - golang-1.17-go
+    - golang-1.17-src
+    - golang-1.17-doc
+    - golang-1.17
+  visiblename: golang-1.17
+  version: 1.17.7
+  origversion: null
   status: legacy
   maintainers:
     - team+go-compiler@tracker.debian.org
@@ -7480,16 +7698,16 @@
     - golang
   vulnerable: true
 - repo: deepin_25
-  subrepo: community
-  srcname: golang-1.23
+  subrepo: main
+  srcname: golang-1.17
   binnames:
-    - golang-1.23-go
-    - golang-1.23-src
-    - golang-1.23-doc
-    - golang-1.23
-  visiblename: golang-1.23
-  version: 1.23.6
-  origversion: 1.23.6-4
+    - golang-1.17-go
+    - golang-1.17-src
+    - golang-1.17-doc
+    - golang-1.17
+  visiblename: golang-1.17
+  version: 1.17.7
+  origversion: null
   status: legacy
   maintainers:
     - team+go-compiler@tracker.debian.org
@@ -7498,8 +7716,9 @@
     - paultag@debian.org
     - stapelberg@debian.org
     - tianon@debian.org
+    - toddy@debian.org
   categories:
-    - misc
+    - golang
   vulnerable: true
 - repo: deepin_25
   subrepo: community
@@ -7522,41 +7741,6 @@
     - tianon@debian.org
   categories:
     - misc
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.20.12
-  origversion: 1.20.12-2.module+el8.9.0+21033+5795bdf6
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: deepin_25
-  subrepo: main
-  srcname: golang-1.22
-  binnames:
-    - golang-1.22-go
-    - golang-1.22-src
-    - golang-1.22-doc
-    - golang-1.22
-  visiblename: golang-1.22
-  version: 1.22.12
-  origversion: 1.22.12-3deepin1
-  status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-  categories:
-    - golang
   vulnerable: true
 - repo: devuan_4_0
   subrepo: chimaera/main
@@ -7664,68 +7848,86 @@
   subrepo: appstream
   srcname: golang
   visiblename: golang
+  version: 1.15.14
+  origversion: 1.15.14-1.module+el8.4.0+11833+614b07b8
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.15.14
+  origversion: 1.15.14-2.module+el8.4.0+12542+e3fec473
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.16.12
+  origversion: 1.16.12-1.module+el8.5.0+13637+960c7771
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.16.7
+  origversion: 1.16.7-1.module+el8.5.0+12246+1aac4e3f
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.17.10
+  origversion: 1.17.10-1.module+el8.6.0+15486+6d4da7db
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
+  version: 1.17.12
+  origversion: 1.17.12-1.module+el8.6.0+16014+a372c00b
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: eurolinux_8
+  subrepo: appstream
+  srcname: golang
+  visiblename: golang
   version: 1.17.7
   origversion: 1.17.7-1.module+el8.6.0+14297+32a15e19
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.18.9
-  origversion: 1.18.9-1.module+el8.7.0+17640+84246675
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.19.6
-  origversion: 1.19.6-1.module+el8.8.0+18289+edd6c8b6
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_8
-  subrepo: appstream
-  srcname: golang
-  visiblename: golang
-  version: 1.20.10
-  origversion: 1.20.10-1.module+el8.9.0+20382+04f7fe80
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: eurolinux_9
-  subrepo: appstream
-  srcname: golang
-  binnames:
-    - golang
-    - golang-docs
-    - golang-misc
-    - golang-tests
-    - golang-src
-    - golang-bin
-    - golang-race
-  visiblename: golang
-  version: 1.17.2
-  origversion: 1.17.2-1.el9
   status: legacy
   summary: The Go Programming Language
   licenses:
@@ -7794,18 +7996,6 @@
     - BSD and Public Domain
   categories:
     - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.6.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
   vulnerable: true
 - repo: eurolinux_9
   subrepo: appstream
@@ -7926,6 +8116,18 @@
     - BSD and Public Domain
   categories:
     - Unspecified
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.17.8
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: eurolinux_9
   subrepo: appstream
@@ -8093,18 +8295,6 @@
     - BSD and Public Domain
   categories:
     - Unspecified
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.17.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
   vulnerable: true
 - repo: eurolinux_9
   subrepo: appstream
@@ -8338,27 +8528,6 @@
     - Unspecified
   vulnerable: true
 - repo: fedora_42
-  subrepo: updates
-  srcname: golang
-  binnames:
-    - golang
-    - golang-docs
-    - golang-misc
-    - golang-tests
-    - golang-src
-    - golang-bin
-    - golang-shared
-  visiblename: golang
-  version: 1.25.10
-  origversion: 1.25.10-2.fc42
-  status: outdated
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause AND LicenseRef-Fedora-Public-Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: fedora_42
   subrepo: release
   srcname: golang
   binnames:
@@ -8373,6 +8542,27 @@
   version: 1.24.1
   origversion: 1.24.1-1.fc42
   status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause AND LicenseRef-Fedora-Public-Domain
+  categories:
+    - Unspecified
+  vulnerable: true
+- repo: fedora_42
+  subrepo: updates
+  srcname: golang
+  binnames:
+    - golang
+    - golang-docs
+    - golang-misc
+    - golang-tests
+    - golang-src
+    - golang-bin
+    - golang-shared
+  visiblename: golang
+  version: 1.25.10
+  origversion: 1.25.10-2.fc42
+  status: outdated
   summary: The Go Programming Language
   licenses:
     - BSD-3-Clause AND LicenseRef-Fedora-Public-Domain
@@ -8463,7 +8653,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.7.5
+  version: 1.9.4
   origversion: null
   status: legacy
   licenses:
@@ -8545,9 +8735,9 @@
   summary: Compiler and libraries for Go, a statically-typed language
   vulnerable: true
 - repo: gobolinux
-  srcname: Golang-Bin
-  visiblename: Golang-Bin
-  version: 1.7.1
+  srcname: Golang
+  visiblename: Golang
+  version: 1.17.1
   origversion: null
   status: outdated
   summary: The Go language
@@ -8620,6 +8810,18 @@
   categories:
     - dev-lang
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: "1.18"
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
 - repo: liguros_stable
   srcname: dev-lang/go-bootstrap
   visiblename: dev-lang/go-bootstrap
@@ -8638,7 +8840,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.8.1
+  version: "1.10"
   origversion: null
   status: legacy
   licenses:
@@ -8722,7 +8924,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.8.3
+  version: 1.10.1
   origversion: null
   status: legacy
   licenses:
@@ -8744,18 +8946,6 @@
     - BSD
   categories:
     - lang
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.17.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
   vulnerable: true
 - repo: macports
   srcname: lang/go-1.23
@@ -8802,27 +8992,6 @@
     - BSD
   categories:
     - lang
-  vulnerable: true
-- repo: mageia_9
-  subrepo: core/release
-  srcname: golang
-  binnames:
-    - golang
-    - golang-docs
-    - golang-misc
-    - golang-tests
-    - golang-src
-    - golang-bin
-    - golang-shared
-  visiblename: golang
-  version: 1.20.5
-  origversion: 1.20.5-1.mga9
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Development/Other
   vulnerable: true
 - repo: mageia_9
   subrepo: core/updates
@@ -9181,6 +9350,39 @@
   categories:
     - Development/Golang
   vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.2.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: mageia_9
+  subrepo: core/release
+  srcname: golang
+  binnames:
+    - golang
+    - golang-docs
+    - golang-misc
+    - golang-tests
+    - golang-src
+    - golang-bin
+    - golang-shared
+  visiblename: golang
+  version: 1.20.5
+  origversion: 1.20.5-1.mga9
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Development/Other
+  vulnerable: true
 - repo: nix_stable_24_11
   srcname: go_1_24
   visiblename: go
@@ -9197,18 +9399,6 @@
     - falakreyaz@gmail.com
   licenses:
     - BSD-3-Clause
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.6.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
   vulnerable: true
 - repo: mageia_10
   subrepo: core/release
@@ -9295,6 +9485,18 @@
     - falakreyaz@gmail.com
   licenses:
     - BSD-3-Clause
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.18.1
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
 - repo: nix_stable_24_11
   srcname: go_1_22
@@ -9500,7 +9702,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.2.1
+  version: "1.15"
   origversion: null
   status: legacy
   licenses:
@@ -9512,7 +9714,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: "1.3"
+  version: 1.15.1
   origversion: null
   status: legacy
   licenses:
@@ -9524,7 +9726,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.3.3
+  version: 1.15.2
   origversion: null
   status: legacy
   licenses:
@@ -9536,7 +9738,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: "1.4"
+  version: 1.15.3
   origversion: null
   status: legacy
   licenses:
@@ -9548,7 +9750,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.4.2
+  version: 1.15.4
   origversion: null
   status: legacy
   licenses:
@@ -9560,7 +9762,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.5.1
+  version: 1.15.5
   origversion: null
   status: legacy
   licenses:
@@ -9572,7 +9774,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.5.3
+  version: 1.15.6
   origversion: null
   status: legacy
   licenses:
@@ -9584,7 +9786,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.17.4
+  version: 1.15.7
   origversion: null
   status: legacy
   licenses:
@@ -9596,7 +9798,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.17.5
+  version: 1.15.8
   origversion: null
   status: legacy
   licenses:
@@ -9608,7 +9810,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.17.6
+  version: "1.16"
   origversion: null
   status: legacy
   licenses:
@@ -9620,7 +9822,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.17.7
+  version: 1.16.1
   origversion: null
   status: legacy
   licenses:
@@ -9632,7 +9834,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.17.8
+  version: 1.16.2
   origversion: null
   status: legacy
   licenses:
@@ -9644,7 +9846,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: "1.18"
+  version: 1.16.3
   origversion: null
   status: legacy
   licenses:
@@ -9656,7 +9858,7 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.18.1
+  version: 1.16.4
   origversion: null
   status: legacy
   licenses:
@@ -9668,7 +9870,19 @@
   srcname: org.golang.Go
   binname: org.golang.Go
   visiblename: Go
-  version: 1.18.2
+  version: 1.16.5
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.16.6
   origversion: null
   status: legacy
   licenses:
@@ -11283,6 +11497,16 @@
     - MIT license
   categories:
     - Development
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.2
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: npackd_stable64
   srcname: org.golang.Go64
@@ -12267,6 +12491,19 @@
   categories:
     - golang
   vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.4
+  visiblename: go1.4
+  version: 1.4.3
+  origversion: 1.4.3-bp155.3.13
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Go
+  vulnerable: true
 - repo: openkylin_3_0
   subrepo: huanghe-proposed/main
   srcname: golang-1.26
@@ -12381,214 +12618,6 @@
     - BSD and Public Domain
   categories:
     - Unspecified
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go
-  visiblename: go
-  version: "1.19"
-  origversion: 1.19-150000.3.26.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.10
-  visiblename: go1.10
-  version: 1.10.8
-  origversion: 1.10.8-1.17.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.11
-  visiblename: go1.11
-  version: 1.11.13
-  origversion: 1.11.13-1.31.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.12
-  visiblename: go1.12
-  version: 1.12.17
-  origversion: 1.12.17-1.29.2
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.13
-  visiblename: go1.13
-  version: 1.13.15
-  origversion: 1.13.15-1.18.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.14
-  visiblename: go1.14
-  version: 1.14.15
-  origversion: 1.14.15-1.35.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.15
-  visiblename: go1.15
-  version: 1.15.15
-  origversion: 1.15.15-1.39.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.16
-  visiblename: go1.16
-  version: 1.16.15
-  origversion: 1.16.15-150000.1.49.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.17
-  visiblename: go1.17
-  version: 1.17.13
-  origversion: 1.17.13-150000.1.45.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.18
-  visiblename: go1.18
-  version: 1.18.10
-  origversion: 1.18.10-150000.1.46.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.19
-  visiblename: go1.19
-  version: 1.19.9
-  origversion: 1.19.9-150000.1.31.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Go
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.20
-  visiblename: go1.20
-  version: 1.20.4
-  origversion: 1.20.4-150000.1.11.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Go
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.4
-  visiblename: go1.4
-  version: 1.4.3
-  origversion: 1.4.3-bp155.3.13
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Go
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.7
-  visiblename: go1.7
-  version: 1.7.5
-  origversion: 1.7.5-6.12
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.8
-  visiblename: go1.8
-  version: 1.8.7
-  origversion: 1.8.7-1.45
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
-  vulnerable: true
-- repo: opensuse_leap_15_5
-  subrepo: main/oss
-  srcname: go1.9
-  visiblename: go1.9
-  version: 1.9.7
-  origversion: 1.9.7-3.11.1
-  status: legacy
-  summary: A compiled, garbage-collected, concurrent programming language
-  licenses:
-    - BSD-3-Clause
-  categories:
-    - Development/Languages/Other
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: updates/sle
@@ -12771,26 +12800,6 @@
     - BSD-3-Clause
   categories:
     - Development/Languages/Go
-  vulnerable: true
-- repo: raspbian_testing
-  subrepo: main
-  srcname: golang
-  binnames:
-    - golang-go
-    - golang-src
-    - golang-doc
-    - golang
-  visiblename: golang
-  version: 1.6.1
-  origversion: 2:1.6.1-2+rpi1
-  status: legacy
-  maintainers:
-    - pkg-golang-devel@lists.alioth.debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-  categories:
-    - devel
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: updates/sle
@@ -12986,6 +12995,16 @@
     - BSD-3-Clause
   categories:
     - Development/Languages/Go
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.6
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: opensuse_leap_15_5
   subrepo: updates/sle
@@ -13246,6 +13265,201 @@
     - BSD-3-Clause
   categories:
     - Development/Languages/Go
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go
+  visiblename: go
+  version: "1.19"
+  origversion: 1.19-150000.3.26.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.10
+  visiblename: go1.10
+  version: 1.10.8
+  origversion: 1.10.8-1.17.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.11
+  visiblename: go1.11
+  version: 1.11.13
+  origversion: 1.11.13-1.31.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.12
+  visiblename: go1.12
+  version: 1.12.17
+  origversion: 1.12.17-1.29.2
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.13
+  visiblename: go1.13
+  version: 1.13.15
+  origversion: 1.13.15-1.18.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.14
+  visiblename: go1.14
+  version: 1.14.15
+  origversion: 1.14.15-1.35.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.15
+  visiblename: go1.15
+  version: 1.15.15
+  origversion: 1.15.15-1.39.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.16
+  visiblename: go1.16
+  version: 1.16.15
+  origversion: 1.16.15-150000.1.49.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.17
+  visiblename: go1.17
+  version: 1.17.13
+  origversion: 1.17.13-150000.1.45.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.18
+  visiblename: go1.18
+  version: 1.18.10
+  origversion: 1.18.10-150000.1.46.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.19
+  visiblename: go1.19
+  version: 1.19.9
+  origversion: 1.19.9-150000.1.31.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Go
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.20
+  visiblename: go1.20
+  version: 1.20.4
+  origversion: 1.20.4-150000.1.11.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Go
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.7
+  visiblename: go1.7
+  version: 1.7.5
+  origversion: 1.7.5-6.12
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.8
+  visiblename: go1.8
+  version: 1.8.7
+  origversion: 1.8.7-1.45
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
+  vulnerable: true
+- repo: opensuse_leap_15_5
+  subrepo: main/oss
+  srcname: go1.9
+  visiblename: go1.9
+  version: 1.9.7
+  origversion: 1.9.7-3.11.1
+  status: legacy
+  summary: A compiled, garbage-collected, concurrent programming language
+  licenses:
+    - BSD-3-Clause
+  categories:
+    - Development/Languages/Other
   vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: main/oss
@@ -13520,28 +13734,6 @@
   categories:
     - Development/Languages/Go
   vulnerable: true
-- repo: raspbian_stable
-  subrepo: main
-  srcname: golang-1.10
-  binnames:
-    - golang-1.10-go
-    - golang-1.10-src
-    - golang-1.10-doc
-    - golang-1.10
-  visiblename: golang-1.10
-  version: 1.10.7
-  origversion: 1.10.7-2+rpi1
-  status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
-  categories:
-    - devel
-  vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: go
@@ -13593,6 +13785,28 @@
     - BSD-3-Clause
   categories:
     - Development/Languages/Go
+  vulnerable: true
+- repo: pardus_21
+  subrepo: main
+  srcname: golang-1.15
+  binnames:
+    - golang-1.15-go
+    - golang-1.15-src
+    - golang-1.15-doc
+    - golang-1.15
+  visiblename: golang-1.15
+  version: 1.15.15
+  origversion: 1.15.15-1~deb11u4
+  status: outdated
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - golang
   vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
@@ -13828,16 +14042,6 @@
   categories:
     - Development/Languages/Go
   vulnerable: true
-- repo: scoop
-  subrepo: versions
-  binname: go124
-  visiblename: go124
-  version: 1.24.13
-  origversion: null
-  status: legacy
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
   srcname: go1.23
@@ -13980,6 +14184,16 @@
     - BSD-3-Clause
   categories:
     - Development/Languages/Go
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.7
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: opensuse_leap_15_6
   subrepo: updates/sle
@@ -14369,19 +14583,6 @@
   categories:
     - Development/Languages/Go
   vulnerable: true
-- repo: pkgsrc_2026_2
-  srcname: lang/go-bin
-  binname: go-bin
-  visiblename: lang/go-bin
-  version: 1.24.11
-  origversion: null
-  status: outdated
-  summary: Bootstrap toolchain for lang/go*
-  maintainers:
-    - tnn@netbsd.org
-  categories:
-    - lang
-  vulnerable: true
 - repo: openwrt_23_05_x86_64
   subrepo: packages
   srcname: feeds/packages/lang/golang/golang
@@ -14470,28 +14671,6 @@
   summary: Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
   maintainers:
     - paul.cosma97@gmail.com
-  vulnerable: true
-- repo: pardus_21
-  subrepo: main
-  srcname: golang-1.15
-  binnames:
-    - golang-1.15-go
-    - golang-1.15-src
-    - golang-1.15-doc
-    - golang-1.15
-  visiblename: golang-1.15
-  version: 1.15.15
-  origversion: 1.15.15-1~deb11u4
-  status: outdated
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
-  categories:
-    - golang
   vulnerable: true
 - repo: pardus_21
   subrepo: main
@@ -14647,25 +14826,18 @@
   categories:
     - misc
   vulnerable: true
-- repo: pclinuxos
-  srcname: golang
-  visiblename: golang
-  version: 1.25.1
-  origversion: 1.25.1-1pclos2025
-  status: outdated
-  summary: The Go Programming Language
-  categories:
-    - Development/Other
-  vulnerable: true
-- repo: scoop
-  subrepo: versions
-  binname: go118
-  visiblename: go118
-  version: 1.18.10
+- repo: pkgsrc_2026_2
+  srcname: lang/go-bin
+  binname: go-bin
+  visiblename: lang/go-bin
+  version: 1.24.11
   origversion: null
-  status: legacy
-  licenses:
-    - BSD-3-Clause
+  status: outdated
+  summary: Bootstrap toolchain for lang/go*
+  maintainers:
+    - tnn@netbsd.org
+  categories:
+    - lang
   vulnerable: true
 - repo: pkgsrc_2026_2
   srcname: lang/go118
@@ -15278,16 +15450,6 @@
   categories:
     - devel
   vulnerable: true
-- repo: scoop
-  subrepo: versions
-  binname: go119
-  visiblename: go119
-  version: 1.19.13
-  origversion: null
-  status: legacy
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
 - repo: raspbian_oldstable
   subrepo: main
   srcname: golang-1.9
@@ -15326,6 +15488,28 @@
     - paultag@debian.org
     - stapelberg@debian.org
     - tianon@debian.org
+  categories:
+    - devel
+  vulnerable: true
+- repo: raspbian_stable
+  subrepo: main
+  srcname: golang-1.10
+  binnames:
+    - golang-1.10-go
+    - golang-1.10-src
+    - golang-1.10-doc
+    - golang-1.10
+  visiblename: golang-1.10
+  version: 1.10.7
+  origversion: 1.10.7-2+rpi1
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
   categories:
     - devel
   vulnerable: true
@@ -15663,16 +15847,6 @@
   categories:
     - devel
   vulnerable: true
-- repo: scoop
-  subrepo: versions
-  binname: go120
-  visiblename: go120
-  version: 1.20.14
-  origversion: null
-  status: legacy
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
 - repo: raspbian_stable
   subrepo: main
   srcname: golang-1.8
@@ -15709,6 +15883,26 @@
   maintainers:
     - pkg-golang-devel@lists.alioth.debian.org
     - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+  categories:
+    - devel
+  vulnerable: true
+- repo: raspbian_testing
+  subrepo: main
+  srcname: golang
+  binnames:
+    - golang-go
+    - golang-src
+    - golang-doc
+    - golang
+  visiblename: golang
+  version: 1.6.1
+  origversion: 2:1.6.1-2+rpi1
+  status: legacy
+  maintainers:
+    - pkg-golang-devel@lists.alioth.debian.org
     - paultag@debian.org
     - stapelberg@debian.org
     - tianon@debian.org
@@ -15847,6 +16041,21 @@
     - toddy@debian.org
   categories:
     - misc
+  vulnerable: true
+- repo: rocky_8
+  subrepo: AppStream
+  srcname: golang
+  visiblename: golang
+  version: 1.21.13
+  origversion: 1.21.13-2.module+el8.10.0+1868+7f5969f2
+  status: legacy
+  summary: The Go Programming Language
+  maintainers:
+    - infrastructure@rockylinux.org
+  licenses:
+    - BSD and Public Domain
+  categories:
+    - Unspecified
   vulnerable: true
 - repo: raspbian_testing
   subrepo: main
@@ -16029,16 +16238,6 @@
   categories:
     - misc
   vulnerable: true
-- repo: scoop
-  subrepo: versions
-  binname: go115
-  visiblename: go115
-  version: 1.15.15
-  origversion: null
-  status: legacy
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
 - repo: raspbian_testing
   subrepo: main
   srcname: golang-1.6
@@ -16080,6 +16279,16 @@
     - tianon@debian.org
   categories:
     - devel
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.3
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: raspbian_testing
   subrepo: main
@@ -16129,21 +16338,6 @@
   visiblename: golang
   version: 1.21.11
   origversion: 1.21.11-1.module+el8.10.0+1831+fc70fba6
-  status: legacy
-  summary: The Go Programming Language
-  maintainers:
-    - infrastructure@rockylinux.org
-  licenses:
-    - BSD and Public Domain
-  categories:
-    - Unspecified
-  vulnerable: true
-- repo: rocky_8
-  subrepo: AppStream
-  srcname: golang
-  visiblename: golang
-  version: 1.21.13
-  origversion: 1.21.13-2.module+el8.10.0+1868+7f5969f2
   status: legacy
   summary: The Go Programming Language
   maintainers:
@@ -16227,16 +16421,6 @@
     - BSD and Public Domain
   categories:
     - Unspecified
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.1
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
   vulnerable: true
 - repo: rocky_8
   subrepo: AppStream
@@ -16482,6 +16666,56 @@
   vulnerable: true
 - repo: scoop
   subrepo: versions
+  binname: go118
+  visiblename: go118
+  version: 1.18.10
+  origversion: null
+  status: legacy
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
+- repo: scoop
+  subrepo: versions
+  binname: go119
+  visiblename: go119
+  version: 1.19.13
+  origversion: null
+  status: legacy
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
+- repo: scoop
+  subrepo: versions
+  binname: go120
+  visiblename: go120
+  version: 1.20.14
+  origversion: null
+  status: legacy
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
+- repo: scoop
+  subrepo: versions
+  binname: go124
+  visiblename: go124
+  version: 1.24.13
+  origversion: null
+  status: legacy
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
+- repo: scoop
+  subrepo: versions
+  binname: go115
+  visiblename: go115
+  version: 1.15.15
+  origversion: null
+  status: legacy
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
+- repo: scoop
+  subrepo: versions
   binname: go113
   visiblename: go113
   version: 1.13.15
@@ -16664,6 +16898,26 @@
     - universe/devel
   vulnerable: true
 - repo: ubuntu_16_04
+  subrepo: xenial/main
+  srcname: golang-1.6
+  binnames:
+    - golang-1.6-go
+    - golang-1.6-src
+    - golang-1.6-doc
+    - golang-1.6
+  visiblename: golang-1.6
+  version: 1.6.1
+  origversion: 1.6.1-0ubuntu1
+  status: legacy
+  maintainers:
+    - ubuntu-devel-discuss@lists.ubuntu.com
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+  categories:
+    - devel
+  vulnerable: true
+- repo: ubuntu_16_04
   subrepo: xenial-updates/main
   srcname: golang-1.10
   binnames:
@@ -16725,26 +16979,6 @@
     - toddy@debian.org
   categories:
     - universe/devel
-  vulnerable: true
-- repo: ubuntu_16_04
-  subrepo: xenial/main
-  srcname: golang-1.6
-  binnames:
-    - golang-1.6-go
-    - golang-1.6-src
-    - golang-1.6-doc
-    - golang-1.6
-  visiblename: golang-1.6
-  version: 1.6.1
-  origversion: 1.6.1-0ubuntu1
-  status: legacy
-  maintainers:
-    - ubuntu-devel-discuss@lists.ubuntu.com
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-  categories:
-    - devel
   vulnerable: true
 - repo: ubuntu_16_04_backports
   subrepo: xenial-backports/universe
@@ -17415,51 +17649,15 @@
   categories:
     - universe/golang
   vulnerable: true
-- repo: ubuntu_24_04
-  subrepo: noble/main
-  srcname: golang-1.22
-  binnames:
-    - golang-1.22-go
-    - golang-1.22-src
-    - golang-1.22-doc
-    - golang-1.22
-  visiblename: golang-1.22
-  version: 1.22.2
-  origversion: 1.22.2-2
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.0
+  origversion: null
   status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
-  categories:
-    - misc
-  vulnerable: true
-- repo: ubuntu_24_04
-  subrepo: noble/universe
-  srcname: golang-1.21
-  binnames:
-    - golang-1.21-go
-    - golang-1.21-src
-    - golang-1.21-doc
-    - golang-1.21
-  visiblename: golang-1.21
-  version: 1.21.9
-  origversion: 1.21.9-1
-  status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-    - toddy@debian.org
-  categories:
-    - universe/misc
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: ubuntu_24_04
   subrepo: noble-updates/main
@@ -17529,28 +17727,6 @@
   categories:
     - universe/golang
   vulnerable: true
-- repo: ubuntu_26_04
-  subrepo: resolute/universe
-  srcname: golang-1.23
-  binnames:
-    - golang-1.23-go
-    - golang-1.23-src
-    - golang-1.23-doc
-    - golang-1.23
-  visiblename: golang-1.23
-  version: 1.23.10
-  origversion: 1.23.10-1
-  status: legacy
-  maintainers:
-    - team+go-compiler@tracker.debian.org
-    - foka@debian.org
-    - mwhudson@debian.org
-    - paultag@debian.org
-    - stapelberg@debian.org
-    - tianon@debian.org
-  categories:
-    - universe/misc
-  vulnerable: true
 - repo: ubuntu_24_04
   subrepo: noble-updates/universe
   srcname: golang-1.24
@@ -17572,6 +17748,52 @@
     - tianon@debian.org
   categories:
     - universe/golang
+  vulnerable: true
+- repo: ubuntu_24_04
+  subrepo: noble/main
+  srcname: golang-1.22
+  binnames:
+    - golang-1.22-go
+    - golang-1.22-src
+    - golang-1.22-doc
+    - golang-1.22
+  visiblename: golang-1.22
+  version: 1.22.2
+  origversion: 1.22.2-2
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - misc
+  vulnerable: true
+- repo: ubuntu_24_04
+  subrepo: noble/universe
+  srcname: golang-1.21
+  binnames:
+    - golang-1.21-go
+    - golang-1.21-src
+    - golang-1.21-doc
+    - golang-1.21
+  visiblename: golang-1.21
+  version: 1.21.9
+  origversion: 1.21.9-1
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+    - toddy@debian.org
+  categories:
+    - universe/misc
   vulnerable: true
 - repo: ubuntu_25_04
   subrepo: plucky/main
@@ -17616,6 +17838,16 @@
     - tianon@debian.org
   categories:
     - universe/misc
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.4
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
   vulnerable: true
 - repo: ubuntu_25_04
   subrepo: plucky-updates/universe
@@ -17771,16 +18003,6 @@
   categories:
     - misc
   vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.0
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
 - repo: ubuntu_26_04
   subrepo: resolute/main
   srcname: golang-1.25
@@ -17826,6 +18048,38 @@
   categories:
     - golang
   vulnerable: true
+- repo: ubuntu_26_04
+  subrepo: resolute/universe
+  srcname: golang-1.23
+  binnames:
+    - golang-1.23-go
+    - golang-1.23-src
+    - golang-1.23-doc
+    - golang-1.23
+  visiblename: golang-1.23
+  version: 1.23.10
+  origversion: 1.23.10-1
+  status: legacy
+  maintainers:
+    - team+go-compiler@tracker.debian.org
+    - foka@debian.org
+    - mwhudson@debian.org
+    - paultag@debian.org
+    - stapelberg@debian.org
+    - tianon@debian.org
+  categories:
+    - universe/misc
+  vulnerable: true
+- repo: xrepo
+  srcname: go
+  visiblename: go
+  version: 1.25.5
+  origversion: null
+  status: legacy
+  summary: The Go Programming Language
+  licenses:
+    - BSD-3-Clause
+  vulnerable: true
 - repo: void_x86_64
   subrepo: x86_64
   srcname: go1.20
@@ -17843,57 +18097,7 @@
 - repo: xrepo
   srcname: go
   visiblename: go
-  version: 1.25.2
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.3
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.4
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.5
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.6
-  origversion: null
-  status: legacy
-  summary: The Go Programming Language
-  licenses:
-    - BSD-3-Clause
-  vulnerable: true
-- repo: xrepo
-  srcname: go
-  visiblename: go
-  version: 1.25.7
+  version: 1.25.1
   origversion: null
   status: legacy
   summary: The Go Programming Language
@@ -17909,222 +18113,6 @@
   summary: The Go Programming Language
   licenses:
     - BSD-3-Clause
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.13.7
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.7.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.9"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.9.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.9.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.9.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.9.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.10"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.10.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.10.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.10.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.11"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.11.1
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.11.2
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.11.4
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.11.5
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: "1.12"
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
-  vulnerable: true
-- repo: npackd_stable
-  srcname: org.golang.Go
-  binname: org.golang.Go
-  visiblename: Go
-  version: 1.17.3
-  origversion: null
-  status: legacy
-  licenses:
-    - MIT license
-  categories:
-    - Development
   vulnerable: true
 - repo: xrepo
   srcname: go
@@ -18205,4 +18193,16 @@
   summary: The Go Programming Language
   licenses:
     - BSD-3-Clause
+  vulnerable: true
+- repo: npackd_stable
+  srcname: org.golang.Go
+  binname: org.golang.Go
+  visiblename: Go
+  version: 1.13.6
+  origversion: null
+  status: legacy
+  licenses:
+    - MIT license
+  categories:
+    - Development
   vulnerable: true
