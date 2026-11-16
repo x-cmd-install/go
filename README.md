@@ -14,12 +14,12 @@ x install go
 
 ## Code insight
 
-Total: **2,842,020** lines of code across **12763** files in the top 5 languages.
+Total: **2,843,456** lines of code across **12772** files in the top 5 languages.
 
 | Language | Code | Comments | Blanks | Files |
 |----------|-----:|---------:|-------:|------:|
-| Go | 2,636,753 | 479,799 | 275,647 | 11973 |
-| AssemblyGAS | 158,308 | 20,356 | 16,778 | 672 |
+| Go | 2,638,034 | 480,039 | 275,793 | 11981 |
+| AssemblyGAS | 158,463 | 20,397 | 16,789 | 673 |
 | Json | 14,173 | 0 | 124 | 38 |
 | Html | 12,544 | 37 | 350 | 15 |
 | Yaml | 6,569 | 520 | 348 | 65 |
@@ -42,26 +42,26 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 139,915 · **Forks**: 20,282 · **Open issues**: 74,674 · **Contributors**: 2,443
+- **Stars**: 139,944 · **Forks**: 20,277 · **Open issues**: 74,683 · **Contributors**: 2,443
 
 ## Totals (cumulative)
 
-- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 679 · **Closed issues**: 65455 · **Open issues**: 9219 · **Commits**: 68678
+- **Releases**: 0 · **Merged PRs**: 1 · **Open PRs**: 689 · **Closed issues**: 65463 · **Open issues**: 9220 · **Commits**: 68686
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-16 | 0 | 0 | 121 | 328 | 324 | 342 |
-| last60d | 2026-09-16 | 0 | 0 | 192 | 674 | 570 | 722 |
-| 90d | 2026-08-17 | 0 | 0 | 220 | 1058 | 761 | 1144 |
-| last180d | 2026-05-19 | 0 | 0 | 294 | 1897 | 1122 | 1923 |
-| 360d | 2025-11-20 | 0 | 0 | 384 | 4016 | 1637 | 3370 |
-| last720d | 2024-11-25 | 0 | 0 | 455 | 7875 | 2446 | 6884 |
+| 30d | 2026-10-17 | 0 | 0 | 128 | 323 | 315 | 350 |
+| last60d | 2026-09-17 | 0 | 0 | 200 | 666 | 573 | 731 |
+| 90d | 2026-08-18 | 0 | 0 | 230 | 1048 | 764 | 1153 |
+| last180d | 2026-05-20 | 0 | 0 | 304 | 1878 | 1119 | 1932 |
+| 360d | 2025-11-21 | 0 | 0 | 394 | 4010 | 1637 | 3379 |
+| last720d | 2024-11-26 | 0 | 0 | 465 | 7862 | 2446 | 6889 |
 
 ## Distribution status
 
-Reported by **1217** distros on [repology.org](https://repology.org/project/go). **46** are ✅ on the latest upstream release, **156** are ⚠️ on an older version.
+Reported by **1217** distros on [repology.org](https://repology.org/project/go). **51** are ✅ on the latest upstream release, **151** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -87,4 +87,4 @@ Install metadata for go lives in the [x-cmd/install](https://github.com/x-cmd/in
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261115.yml` · 2026-11-15T07:16:56Z._
+_Snapshot: `data/card/261116.yml` · 2026-11-16T07:49:55Z._
